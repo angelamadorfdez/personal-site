@@ -47,7 +47,7 @@ title: Blog
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="bg-gray-100 mx-2 p-2 rounded-sm">{{ page }}</span>
+      <span class="bg-slate-100 mx-2 p-2 rounded-sm">{{ page }}</span>
     {% elsif page == 1 %}
       <a href="/blog">{{ page }}</a>
     {% else %}

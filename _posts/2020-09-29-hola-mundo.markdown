@@ -9,6 +9,8 @@ Tras varios meses dándole vueltas, **he decidido comenzar a escribir de nuevo**
 
 Sin grandes florituras y adornos. Quiero centrarme en el contenido y experimentar con los formatos.
 
+<img src="/assets/images/obsidian-dia-5.jpg">
+
 Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el momento me conformaré con **desarrollar el hábito de escribir** y acostumbrarme a anotar y conectar nuevas ideas y pensamientos.
 
 Nos vemos.
