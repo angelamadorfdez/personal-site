@@ -5,22 +5,85 @@
 @tailwind components;
 @tailwind utilities;
 
+/* General Styles */
 
 p {
   @apply mb-6;
 }
 
+hr {
+  @apply my-12
+}
+
+blockquote {
+  @apply mb-0 bg-green-200 p-2 rounded-md;
+}
+
+blockquote p {
+  @apply mb-0;
+}
+
+/* Text content */
+
+div.text-content h1 {
+  @apply text-4xl my-2;
+}
+
+div.text-content h2 {
+  @apply text-3xl my-2;
+}
+
+div.text-content h3 {
+  @apply text-2xl my-2;
+}
+
+div.text-content h4{
+  @apply text-xl my-2;
+}
+
+div.text-content pre {
+  @apply bg-slate-800 w-full rounded-md text-white p-4 mb-6 font-mono;
+}
+
+div.text-content ul {
+  @apply mb-6 ml-6;
+}
+
+div.text-content li ul {
+  @apply my-2 pl-6;
+}
+
 div.text-content li {
-  @apply list-inside list-disc pl-2;
+  @apply list-outside list-disc pl-1 pb-2;
 }
 
 div.text-content a {
-  @apply bg-yellow-200 mx-1 rounded-md;
+  @apply bg-yellow-200 px-1 rounded-md;
 }
 
 div.text-content img {
   @apply rounded-lg;
 }
+
+div.text-content tr th {
+  @apply p-4 text-center border-2;
+}
+
+div.text-content tr td {
+  @apply p-4 text-center border-2;
+}
+
+/* Search box tweaks */
+
+input#search-input {
+  @apply border-2 p-2 mb-4;
+}
+
+ul#results-container li {
+  @apply mb-2;
+}
+
+/* Home Avatar */
 
 .avatar {
   @apply h-auto mt-0 ml-0 mr-8 mb-8 overflow-hidden;
@@ -29,10 +92,14 @@ div.text-content img {
   max-width: 110px;
 }
 
-input#search-input {
-  @apply border-2 p-2 mb-4;
+/* Code formatting */
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+  font-size: 0.75em;
 }
 
-ul#results-container li {
-  @apply mb-2;
+code {
+  flex-wrap: wrap;
 }

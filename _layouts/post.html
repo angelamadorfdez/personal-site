@@ -2,10 +2,10 @@
 layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
-  <div>
+  <div class="text-content">
   
     <header>
-      <h1 class="text-2xl"itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     </header>
 
     <p class="text-xs my-2 opacity-75">
@@ -18,7 +18,7 @@ layout: default
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
     {%- endif -%}</span>
 
-    <div class="my-6 text-content" itemprop="articleBody">
+    <div class="my-6" itemprop="articleBody">
       {{ content }}
     </div>
 

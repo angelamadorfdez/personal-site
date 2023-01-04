@@ -3,8 +3,6 @@ layout: default
 title: Blog
 ---
 
-<div>No hay nada todavía.</div>
-
 {% if site.posts.size > 0 %}
   <ul>
     {% for post in paginator.posts %}
@@ -12,7 +10,7 @@ title: Blog
         <li>
           
           <!-- Title + Link-->
-          <h2 class="text-2xl">
+          <h2 class="text-4xl">
             <a href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
             </a>

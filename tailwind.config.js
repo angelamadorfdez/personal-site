@@ -6,6 +6,7 @@ module.exports = {
     './_posts/*.md',
     './blog/**/*.html',
     './search/*.md',
+    './assets/**/*.css',
     './*.md',
     './*.html',
   ],
