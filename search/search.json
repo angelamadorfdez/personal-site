@@ -1,31 +1,3 @@
 [
   
-    {
-
-      "title"    : "Un ejemplo de título más largo",
-      "url"      : "/blog/hola-mundo"
-
-    } ,
-  
-    {
-
-      "title"    : "El tercero en discordia",
-      "url"      : "/blog/hola-mundo-copy"
-
-    } ,
-  
-    {
-
-      "title"    : "Otro post distinto",
-      "url"      : "/blog/hola-mundo-copy-3"
-
-    } ,
-  
-    {
-
-      "title"    : "Hola Mundo.",
-      "url"      : "/blog/hola-mundo-copy-2"
-
-    } 
-  
 ]
