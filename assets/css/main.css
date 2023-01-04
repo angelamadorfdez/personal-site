@@ -10,9 +10,11 @@ p {
   @apply mb-4;
 }
 
+/*
 a {
   @apply bg-yellow-200 px-1 rounded-md font-normal;
 }
+*/
 
 .avatar {
   @apply h-auto mt-0 ml-0 mr-8 mb-8 overflow-hidden;
