@@ -1,4 +1,4 @@
-url: "https://angelamador.es" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://angelamador.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ángel Amador" # the name of your site, e.g. ACME Corp.
 
