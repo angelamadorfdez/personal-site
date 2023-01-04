@@ -2,8 +2,10 @@ url: "https://angelamadorfdez.github.io" # the base hostname & protocol for your
 baseurl: "personal-site" # the subpath of your site, e.g. /blog
 title: "Ángel Amador" # the name of your site, e.g. ACME Corp.
 
-# PostCSS is necessary in order to TailwindCSS works properly
 plugins:
-  - jekyll-postcss 
+  - jekyll-postcss # PostCSS is necessary in order to TailwindCSS works properly
+  - jekyll-feed
+  - jekyll-seo-tag
+
 postcss:
   cache: false # In order to avoid Tailwind CSS’s JIT engine restart after each change.
