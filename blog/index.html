@@ -20,7 +20,7 @@ layout: default
           <p class="text-xs my-2 opacity-75">{{ post.date | date: date_format }}</p>
           
           <!-- Post content -->
-          <div class="mt-6">
+          <div class="mt-6 text-content">
             {% if site.show_excerpts %}
               {{ post.excerpt }}
             {% endif %}
