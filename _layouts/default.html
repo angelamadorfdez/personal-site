@@ -12,8 +12,20 @@
     <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
   </head>
   
-  <body class="container mx-auto my-12 w-full lg:w-1/2 p-4 font-sans text-stone-700 leadind-relaxed tracking-wide">
+  <body class="container mx-auto w-full h-screen lg:w-1/2 p-4 font-sans text-stone-700 leadind-relaxed">
+    
+    <div class="mt-6">
+      {% include header.html %}
+    </div>
+
+    <div class="mt-12">
       {{ content }}
+    </div>
+
+    <div class="my-12 absolute bottom-0">
+      {% include footer.html %}
+    </div>
+
   </body>
 
 </html>
