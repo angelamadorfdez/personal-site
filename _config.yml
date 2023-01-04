@@ -2,10 +2,22 @@ url: "https://angelamadorfdez.github.io" # the base hostname & protocol for your
 baseurl: "personal-site" # the subpath of your site, e.g. /blog
 title: "Ángel Amador" # the name of your site, e.g. ACME Corp.
 
+collections:
+  posts:
+    output: true
+    permalink: blog/:title
+
+show_excerpts: true
+
+paginate: 3
+paginate_path: "blog/:num/"
+
+# Build Settings
 plugins:
   - jekyll-postcss # PostCSS is necessary in order to TailwindCSS works properly
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
 postcss:
   cache: false # In order to avoid Tailwind CSS’s JIT engine restart after each change.

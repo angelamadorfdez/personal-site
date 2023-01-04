@@ -11,3 +11,6 @@ gem "jekyll-feed", "~> 0.12"
 
 # SEO
 gem "jekyll-seo-tag"
+
+# Add pagination
+gem "jekyll-paginate"
