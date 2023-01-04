@@ -4,27 +4,24 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <div>
-  <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-  </header>
+  
+    <header>
+      <h1 class="text-2xl"itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
 
-  <div itemprop="articleBody">
-    {{ content }}
-  </div>
+    <p class="text-xs my-2 opacity-75">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+    </p>
 
-  <span>
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ page.date | date: date_format }}
-    </time>
     {%- if page.author -%}
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
     {%- endif -%}</span>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+    <div class="my-6" itemprop="articleBody">
+      {{ content }}
+    </div>
 
-  <a href="{{ page.url | relative_url }}" hidden></a>
   </div>
 </article>

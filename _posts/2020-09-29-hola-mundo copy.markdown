@@ -13,8 +13,6 @@ Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el 
 
 Nos vemos.
 
----
-
 Contenidos recomendados:
   * [El blog de Julian.digital](https://julian.digital/)
   * [The Almanack of Naval Ravikant: A Guide to Wealth and Happiness](https://www.navalmanack.com/)
