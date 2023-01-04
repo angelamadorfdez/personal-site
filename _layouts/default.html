@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- Add favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <!-- Add favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
   </head>
-  <body>
-    {{ content }}
+  
+  <body class="container mx-auto w-full lg:w-1/2 font-sans text-stone-700 leadind-relaxed tracking-wide">
+    <div class="p-10">
+      {{ content }}
+    </div>
   </body>
+
 </html>
