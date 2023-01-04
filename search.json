@@ -3,28 +3,28 @@
     {
 
       "title"    : "Y otro más.",
-      "url"      : "personal-site/blog/hola-mundo"
+      "url"      : "/blog/hola-mundo"
 
     } ,
   
     {
 
       "title"    : "El tercero en discordia",
-      "url"      : "personal-site/blog/hola-mundo-copy"
+      "url"      : "/blog/hola-mundo-copy"
 
     } ,
   
     {
 
       "title"    : "Otro post distinto",
-      "url"      : "personal-site/blog/hola-mundo-copy-3"
+      "url"      : "/blog/hola-mundo-copy-3"
 
     } ,
   
     {
 
       "title"    : "Hola Mundo.",
-      "url"      : "personal-site/blog/hola-mundo-copy-2"
+      "url"      : "/blog/hola-mundo-copy-2"
 
     } 
   
