@@ -19,6 +19,7 @@
 <meta property="og:url" content="https://angelamador.com/blog/" />
 <meta property="og:site_name" content="Ángel Amador" />
 <meta property="og:type" content="website" />
+<link rel="next" href="https://angelamador.com/blog/2/" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Blog" />
 <script type="application/ld+json">
@@ -42,67 +43,465 @@
     </div>
 
     <div class="mb-12">
-      <div class="text-content">
-  
+      
+  <ul>
+    
+      <div class="mb-20">
+        <li>
+        
+          <!-- Title + Link-->
+          <h2 class="text-3xl my-2 mb-4 font-black">
+            <a href="/blog/markdown-cheatsheet">
+            Markdown Cheatsheet for styling
+            </a>
+          </h2>
+
+          <!-- Publication date -->
+          
+          <p class="text-xs -my-2 mb-10 opacity-75">Jan 3, 2023</p>
+          
+          <!-- Post content -->
+          <div class="mt-6 text-content">
+            
+              <p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
+
+<p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
+
+<h2 id="título-2">Título 2</h2>
+<p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
+
+<h3 id="título-3">Título 3</h3>
+<p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
+
+<h4 id="título-4">Título 4</h4>
+<p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
+
+<hr />
+
+<h3 id="encabezado-de-tercer-nivel">Encabezado de tercer nivel</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="">Ut enim ad minim veniam</a>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <strong>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+
+<blockquote>
+  <p>Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita.</p>
+</blockquote>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <em>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore”</em> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find_by</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find_by!</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">],</span> <span class="ss">category: </span><span class="n">params</span><span class="p">[</span><span class="ss">:category</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <del>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore”* eu fugiat nulla pariatur</del>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<hr />
+
+<h3 id="modificando-la-fuente">Modificando la fuente</h3>
+
+<ul>
+  <li><em>Texto en cursiva</em> (Cmd + i)</li>
+  <li><strong>Texto en negrita</strong> (Cmd + b)</li>
+  <li><strong><em>Texto en negrita y cursiva</em></strong> (Cmd + b -&gt; Cmd + i)</li>
+  <li><del>Este texto está tachado</del> (Option + ñ)</li>
+</ul>
+
+<hr />
+
+<h3 id="citas">Citas</h3>
+
+<blockquote>
+  <p>Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="listas-desordenadas">Listas desordenadas</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<ul>
+  <li>elemento 1
     <ul>
-      
-      <li class="list-outside list-disc">
-        <!-- Title + Link-->
-        <a href="/blog/markdown-cheatsheet" class="bg-white">
-        Markdown Cheatsheet for styling
-        </a>
-        <!-- Publication date -->
-        
-        <span class="text-xs pl-2 opacity-75">Jan 3, 2023</span>
-      </li>
-      
-      <li class="list-outside list-disc">
-        <!-- Title + Link-->
-        <a href="/blog/test" class="bg-white">
-        Esto es una prueba
-        </a>
-        <!-- Publication date -->
-        
-        <span class="text-xs pl-2 opacity-75">Jan 1, 2023</span>
-      </li>
-      
-      <li class="list-outside list-disc">
-        <!-- Title + Link-->
-        <a href="/blog/obsidian-graph" class="bg-white">
-        Gráfico de Obsidian
-        </a>
-        <!-- Publication date -->
-        
-        <span class="text-xs pl-2 opacity-75">Apr 11, 2021</span>
-      </li>
-      
-      <li class="list-outside list-disc">
-        <!-- Title + Link-->
-        <a href="/blog/conectar-los-puntos" class="bg-white">
-        Conectar los puntos.
-        </a>
-        <!-- Publication date -->
-        
-        <span class="text-xs pl-2 opacity-75">Oct 3, 2020</span>
-      </li>
-      
-      <li class="list-outside list-disc">
-        <!-- Title + Link-->
-        <a href="/blog/hola-mundo" class="bg-white">
-        Hola Mundo.
-        </a>
-        <!-- Publication date -->
-        
-        <span class="text-xs pl-2 opacity-75">Sep 29, 2020</span>
-      </li>
-      
+      <li>elemento 1.1</li>
+      <li>elemento 1.2</li>
     </ul>
-  
-</div>
+  </li>
+  <li>elemento 2</li>
+  <li>elemento 3</li>
+</ul>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<hr />
+
+<h3 id="listas-ordenadas">Listas ordenadas</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<ol>
+  <li>Elemento 1</li>
+  <li>Elemento 2
+    <ul>
+      <li>Elemento 2.1</li>
+      <li>Elemento 2.2</li>
+    </ul>
+  </li>
+  <li>Elemento 3</li>
+  <li>Elemento 4</li>
+</ol>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<hr />
+
+<h3 id="código">Código</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>Esto es un código<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find_by</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find_by!</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">],</span> <span class="ss">category: </span><span class="n">params</span><span class="p">[</span><span class="ss">:category</span><span class="p">])</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="tablas">Tablas</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Teléfono</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ángel</td>
+      <td>Amador</td>
+      <td>678547364</td>
+    </tr>
+    <tr>
+      <td>José</td>
+      <td>Barranco</td>
+      <td>876143524</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="enlaces-externos">Enlaces externos</h3>
+
+<p><a href="https://obsidian.md/">Este enlace lleva a la web de Obsidian.md</a></p>
+
+            
+          </div>    
+          
+          <hr class="mt-16 w-full opacity-100">
+
+        </li>
+      </div>
+    
+      <div class="mb-20">
+        <li>
+        
+          <!-- Title + Link-->
+          <h2 class="text-3xl my-2 mb-4 font-black">
+            <a href="/blog/test">
+            Esto es una prueba
+            </a>
+          </h2>
+
+          <!-- Publication date -->
+          
+          <p class="text-xs -my-2 mb-10 opacity-75">Jan 1, 2023</p>
+          
+          <!-- Post content -->
+          <div class="mt-6 text-content">
+            
+              <ul>
+  <li>MacOs includes Ruby with OS.</li>
+  <li>You can check the version with: ` ruby -v `</li>
+  <li>If ` which -a ruby ` shows ` # =&gt; /usr/bin/ruby `, this is the included one.</li>
+  <li>You <strong>shouldn’t use or delete the in-built Ruby</strong> version in MacOs:
+    <ul>
+      <li><a href="https://mac.install.guide/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a></li>
+      <li><a href="https://www.freecodecamp.org/news/do-not-use-mac-system-ruby-do-this-instead/">Don’t Use the Mac System Ruby – Use This Instead</a>.</li>
+      <li><a href="https://mac.install.guide/ruby/9.html">Uninstall Ruby on Mac</a></li>
+    </ul>
+  </li>
+  <li>For developing projects you should use a <strong>Ruby Version Manager</strong> such as asdf, chruby, <strong>rbenv</strong>, or rvm.</li>
+</ul>
+
+<h2 id="rbenv-ruby-environment">rbenv (Ruby Environment)</h2>
+
+<ul>
+  <li><strong>rbenv</strong> is a version manager tool for the Ruby programming language on Unix-like systems.</li>
+  <li>It is useful for <strong>switching between multiple Ruby versions on the same machine</strong> and for ensuring that each project you are working on always runs on the correct Ruby version.</li>
+  <li>Official repository: https://github.com/rbenv/rbenv</li>
+  <li>Put rbenv to work with <a href="http://bundler.io/">Bundler</a> for painless Ruby upgrades and bulletproof deployments.</li>
+</ul>
+
+<h4 id="installing-rbenv">Installing rbenv</h4>
+<p>Official guide: https://github.com/rbenv/rbenv#using-package-managers</p>
+
+<ol>
+  <li>Install <a href="https://brew.sh/">Homebrew</a></li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+# INSTALLING PROCESS
+# 
+brew -v
+# =&gt; Homebrew 3.6.17
+# =&gt; Homebrew/homebrew-core (git revision 005f6b96107; last commit 2023-01-02)
+</code></pre></div></div>
+
+<ol>
+  <li>Install rbenv:  ` brew install rbenv ruby-build `</li>
+  <li>Set up rbenv in your shell (and follow the printed instruction):</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv init
+<span class="c"># =&gt; Load rbenv automatically by appending the following to ~/.zshrc: </span>
+<span class="c"># =&gt; eval "$(rbenv init - zsh)"</span>
+</code></pre></div></div>
+
+<p>So, you have to add ` eval “$(rbenv init - zsh)” ` to the ` ~/.zshrc ` config file for ZSH shell:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'eval "$(rbenv init - zsh)"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+</code></pre></div></div>
+
+<ol>
+  <li>Close your Terminal window and open a new one so your changes take effect.</li>
+  <li>Verify that rbenv is properly set up using this <a href="https://github.com/rbenv/rbenv-installer#rbenv-doctor">rbenv-doctor</a> script:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-fsSL</span> https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
+
+<span class="c"># =&gt; Checking for `rbenv' in PATH: /usr/local/bin/rbenv</span>
+<span class="c"># =&gt; Checking for rbenv shims in PATH: OK</span>
+<span class="c"># =&gt; Checking `rbenv install' support: /usr/local/bin/rbenv-install (ruby-build 20221225)</span>
+<span class="c"># =&gt; Counting installed Ruby versions: **none**</span>
+<span class="c"># =&gt; There aren't any Ruby versions installed under `/Users/angelamador/.rbenv/versions'.</span>
+<span class="c"># =&gt; You can install Ruby versions like so: **rbenv install 3.2.0**</span>
+<span class="c"># =&gt; Auditing installed plugins: OK</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Installing rbenv includes <a href="https://github.com/rbenv/ruby-build">ruby-build</a> plugin, so now you’re ready to <a href="https://github.com/rbenv/rbenv#installing-ruby-versions">install some Ruby versions</a> using <code class="language-plaintext highlighter-rouge">rbenv install</code> (ie: ` rbenv install 2.7.4 `)</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-fsSL</span> https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | bash
+
+<span class="c"># =&gt; Checking for `rbenv' in PATH: /usr/local/bin/rbenv</span>
+<span class="c"># =&gt; Checking for rbenv shims in PATH: OK</span>
+<span class="c"># =&gt; Checking `rbenv install' support: /usr/local/bin/rbenv-install (ruby-build 20221225)</span>
+<span class="c"># =&gt; Counting installed Ruby versions: 1 versions</span>
+<span class="c"># =&gt; Auditing installed plugins: OK</span>
+</code></pre></div></div>
+<ol>
+  <li>Check installed Ruby versions:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv versions 
+<span class="c"># =&gt; * system</span>
+<span class="c"># =&gt; 2.7.4</span>
+</code></pre></div></div>
+<ol>
+  <li>Finally, install <a href="https://github.com/rbenv/rbenv-vars">rbenv-vars</a>. This is a plugin for rbenv that lets you set global and project-specific environment variables before spawning Ruby processes: ` brew install rbenv-vars `</li>
+  <li>Run ` which -a ruby ` to check that now there is another ruby installed alongside the built-in one.</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which <span class="nt">-a</span> ruby
+<span class="c"># =&gt; /Users/angelamador/.rbenv/shims/ruby</span>
+<span class="c"># =&gt; /usr/bin/ruby</span>
+</code></pre></div></div>
+
+<h4 id="checking-installed-versions">Checking installed versions</h4>
+<ul>
+  <li>Check installed Ruby versions with rbenv with:  ` rbenv versions `</li>
+  <li>The one which is been using in this folder is highlighted with an ` * `</li>
+  <li>You can choose which version have to be used:</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv <span class="nb">local </span>3.1.2 <span class="c"># Set up version for this folder by generaling .rben-version file (only if this Ruby version has been previously installed)</span>
+rbenv global 3.1.2 <span class="c"># Set up default version if there is no specific one</span>
+</code></pre></div></div>
+<ul>
+  <li>Also, you can <strong>manually set the correct Ruby version</strong> by add it in ` .ruby-version ` file (it affects all folder tree). Remenber that in a Rails project this version have to be the same specified in ` Gemfile`.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv versions
+<span class="c"># =&gt; system</span>
+<span class="c"># =&gt; * 2.7.4 (set by /Users/angelamador/.ruby-version)</span>
+
+ruby <span class="nt">-v</span>       
+<span class="c"># =&gt; ruby 2.7.4p191 (2021-07-07 revision a21a3b7d23) [x86_64-darwin22]</span>
+</code></pre></div></div>
+
+<h4 id="uninstalling-rbenv-and-installed-ruby-versions">Uninstalling rbenv and installed ruby versions</h4>
+
+<ol>
+  <li>The goal is to uninstall all ruby versions installed by <code class="language-plaintext highlighter-rouge">rbenv</code> before uninstalling <code class="language-plaintext highlighter-rouge">rbenv</code> itself.</li>
+  <li>Check installed ruby versions:  ` rbenv versions `</li>
+  <li>Uninstall all versions:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv uninstall x.y.z <span class="c"># uninstall all versions from the last step`</span>
+</code></pre></div></div>
+<ol>
+  <li>Finally, uninstall ` rbenv `:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew uninstall rbenv
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="rails">Rails</h2>
+
+<ol>
+  <li>Install Rails by running: ` sudo gem install rails `</li>
+  <li>Restart terminal.</li>
+  <li>Check installed version:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails <span class="nt">-v</span>     
+<span class="c"># =&gt; Rails 7.0.4</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>To install one specific version of Rails: ` gem install rails -v 6.0.3 `</p>
+  </li>
+  <li>
+    <p>Create a Rails project using a specific version of rails: <code class="language-plaintext highlighter-rouge">rbenv exec rails _6_0_3_ new my_project</code>. You can change project’s Rails version like another gem dependencies in <code class="language-plaintext highlighter-rouge">Gemfile</code>. Don’t forget run <code class="language-plaintext highlighter-rouge">bundle install</code> after that. <a href="https://blog.adev42.com/how-to-switch-to-another-rails-version">How to switch to another Rails version.</a></p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'rails', '6.0.3'
+</code></pre></div></div>
+
+<h4 id="unistall-gems">Unistall gems</h4>
+<p>Since Rubygems 2.1, without gem names, it just removes all of them!  So simply run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem uninstall -aIx
+</code></pre></div></div>
+
+<p>Details of options:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-a</code> Uninstall all matching versions</li>
+  <li><code class="language-plaintext highlighter-rouge">-I</code> Ignore dependency requirements while uninstalling</li>
+  <li><code class="language-plaintext highlighter-rouge">-x</code> Uninstall applicable executables without confirmation</li>
+</ul>
+
+<h4 id="unistall-rails">Unistall Rails</h4>
+<p>Two steps to completelly remove Rails from the computer:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">gem uninstall rails</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gem uninstall railties</code></li>
+</ul>
+
+<p>Se more: <a href="https://emaxime.com/2018/how-to-uninstall-all-ruby-gems.html">How to uninstall all Ruby gems.</a></p>
+
+<h2 id="rbenv-vs-rvm---why-choose-rbenv">rbenv vs RVM - Why choose rbenv?</h2>
+
+<ul>
+  <li>RVM was widely accepted as the norm, greatly due to its wide toolkit.</li>
+  <li>rbenv has become a strong contender with its lightweight approach.</li>
+</ul>
+
+<p>So, how do these tools get the job done? This is where things get a little scary with RVM.</p>
+
+<ol>
+  <li>
+    <p>RVM overrides the <code class="language-plaintext highlighter-rouge">cd</code> shell command in order to load the current Ruby environment variables. Not only can the override cause unexpected behavior, but it also means that rubies and gemsets are loaded when switching directories.</p>
+  </li>
+  <li>
+    <p>rbenv does things on the fly by using shims to execute commands.</p>
+    <ul>
+      <li>A directory of shims (<code class="language-plaintext highlighter-rouge">~/.rbenv/shims</code>) is inserted to the front of <code class="language-plaintext highlighter-rouge">PATH</code>.</li>
+      <li>The directory holds a shim for every Ruby command.</li>
+      <li>The operating system searches for a shim that matches the name of the command, which in turn passes it to rbenv, determining the Ruby version to execute.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>rbenv configuration for an app is dirt simple. Just create a <code class="language-plaintext highlighter-rouge">.ruby-version</code> file with Ruby version:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># .ruby-version file</span>
+<span class="s">2.3.0</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">RBENV_VERSION</code> variable also makes it easy to quickly specify a Ruby version via the command line. It’s first in line when rbenv checks for the current Ruby version.</p>
+
+<p>Source: https://metova.com/choosing-a-ruby-version-management-tool-rbenv-vs-rvm/</p>
+
+            
+          </div>    
+          
+          <hr class="mt-16 w-full opacity-100">
+
+        </li>
+      </div>
+    
+      <div class="mb-20">
+        <li>
+        
+          <!-- Title + Link-->
+          <h2 class="text-3xl my-2 mb-4 font-black">
+            <a href="/blog/obsidian-graph">
+            Gráfico de Obsidian
+            </a>
+          </h2>
+
+          <!-- Publication date -->
+          
+          <p class="text-xs -my-2 mb-10 opacity-75">Apr 11, 2021</p>
+          
+          <!-- Post content -->
+          <div class="mt-6 text-content">
+            
+              <p><img src="/assets/images/obsidian-dia-5.jpg" /></p>
+
+            
+          </div>    
+          
+          <hr class="mt-16 w-full opacity-100">
+
+        </li>
+      </div>
+    
+  </ul>
+
 
 <div class="mt-12">
 <!-- Pagination -->
 <div class="text-sm">
+  
+    
+      <span class="opacity-25 mr-1">Anterior</span>
+    
+  
+    
+      
+        <span class="bg-slate-100 p-2 font-bold">1</span>
+      
+    
+      
+        <a href="/blog/2/" class="mx-1">2</a>
+      
+    
+  
+    
+      <a href="/blog/2/" class="ml-1">Siguiente</a>
+    
   
   </div>
   
