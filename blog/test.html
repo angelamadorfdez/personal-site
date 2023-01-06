@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-  
+
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <!-- Add favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <!-- Add favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
-    
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <!-- Add favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Add favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Esto es una prueba | Ángel Amador</title>
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Esto es una prueba" />
@@ -28,13 +28,14 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-01T07:00:00+00:00","datePublished":"2023-01-01T07:00:00+00:00","description":"MacOs includes Ruby with OS. You can check the version with: ` ruby -v ` If ` which -a ruby ` shows ` # =&gt; /usr/bin/ruby `, this is the included one. You shouldn’t use or delete the in-built Ruby version in MacOs: Do Not Use the MacOS System Ruby Don’t Use the Mac System Ruby – Use This Instead. Uninstall Ruby on Mac For developing projects you should use a Ruby Version Manager such as asdf, chruby, rbenv, or rvm. rbenv (Ruby Environment) rbenv is a version manager tool for the Ruby programming language on Unix-like systems. It is useful for switching between multiple Ruby versions on the same machine and for ensuring that each project you are working on always runs on the correct Ruby version. Official repository: https://github.com/rbenv/rbenv Put rbenv to work with Bundler for painless Ruby upgrades and bulletproof deployments. Installing rbenv Official guide: https://github.com/rbenv/rbenv#using-package-managers Install Homebrew /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot; # # INSTALLING PROCESS # brew -v # =&gt; Homebrew 3.6.17 # =&gt; Homebrew/homebrew-core (git revision 005f6b96107; last commit 2023-01-02) Install rbenv: ` brew install rbenv ruby-build ` Set up rbenv in your shell (and follow the printed instruction): rbenv init # =&gt; Load rbenv automatically by appending the following to ~/.zshrc: # =&gt; eval &quot;$(rbenv init - zsh)&quot; So, you have to add ` eval “$(rbenv init - zsh)” ` to the ` ~/.zshrc ` config file for ZSH shell: echo &#39;eval &quot;$(rbenv init - zsh)&quot;&#39; &gt;&gt; ~/.zshrc Close your Terminal window and open a new one so your changes take effect. Verify that rbenv is properly set up using this rbenv-doctor script: curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash # =&gt; Checking for `rbenv&#39; in PATH: /usr/local/bin/rbenv # =&gt; Checking for rbenv shims in PATH: OK # =&gt; Checking `rbenv install&#39; support: /usr/local/bin/rbenv-install (ruby-build 20221225) # =&gt; Counting installed Ruby versions: **none** # =&gt; There aren&#39;t any Ruby versions installed under `/Users/angelamador/.rbenv/versions&#39;. # =&gt; You can install Ruby versions like so: **rbenv install 3.2.0** # =&gt; Auditing installed plugins: OK Installing rbenv includes ruby-build plugin, so now you’re ready to install some Ruby versions using rbenv install (ie: ` rbenv install 2.7.4 `) curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | bash # =&gt; Checking for `rbenv&#39; in PATH: /usr/local/bin/rbenv # =&gt; Checking for rbenv shims in PATH: OK # =&gt; Checking `rbenv install&#39; support: /usr/local/bin/rbenv-install (ruby-build 20221225) # =&gt; Counting installed Ruby versions: 1 versions # =&gt; Auditing installed plugins: OK Check installed Ruby versions: rbenv versions # =&gt; * system # =&gt; 2.7.4 Finally, install rbenv-vars. This is a plugin for rbenv that lets you set global and project-specific environment variables before spawning Ruby processes: ` brew install rbenv-vars ` Run ` which -a ruby ` to check that now there is another ruby installed alongside the built-in one. which -a ruby # =&gt; /Users/angelamador/.rbenv/shims/ruby # =&gt; /usr/bin/ruby Checking installed versions Check installed Ruby versions with rbenv with: ` rbenv versions ` The one which is been using in this folder is highlighted with an ` * ` You can choose which version have to be used: rbenv local 3.1.2 # Set up version for this folder by generaling .rben-version file (only if this Ruby version has been previously installed) rbenv global 3.1.2 # Set up default version if there is no specific one Also, you can manually set the correct Ruby version by add it in ` .ruby-version ` file (it affects all folder tree). Remenber that in a Rails project this version have to be the same specified in ` Gemfile`. rbenv versions # =&gt; system # =&gt; * 2.7.4 (set by /Users/angelamador/.ruby-version) ruby -v        # =&gt; ruby 2.7.4p191 (2021-07-07 revision a21a3b7d23) [x86_64-darwin22] Uninstalling rbenv and installed ruby versions The goal is to uninstall all ruby versions installed by rbenv before uninstalling rbenv itself. Check installed ruby versions: ` rbenv versions ` Uninstall all versions: rbenv uninstall x.y.z # uninstall all versions from the last step` Finally, uninstall ` rbenv `: brew uninstall rbenv Rails Install Rails by running: ` sudo gem install rails ` Restart terminal. Check installed version: rails -v      # =&gt; Rails 7.0.4 To install one specific version of Rails: ` gem install rails -v 6.0.3 ` Create a Rails project using a specific version of rails: rbenv exec rails _6_0_3_ new my_project. You can change project’s Rails version like another gem dependencies in Gemfile. Don’t forget run bundle install after that. How to switch to another Rails version. source &#39;https://rubygems.org&#39; gem &#39;rails&#39;, &#39;6.0.3&#39; Unistall gems Since Rubygems 2.1, without gem names, it just removes all of them! So simply run: gem uninstall -aIx Details of options: -a Uninstall all matching versions -I Ignore dependency requirements while uninstalling -x Uninstall applicable executables without confirmation Unistall Rails Two steps to completelly remove Rails from the computer: gem uninstall rails gem uninstall railties Se more: How to uninstall all Ruby gems. rbenv vs RVM - Why choose rbenv? RVM was widely accepted as the norm, greatly due to its wide toolkit. rbenv has become a strong contender with its lightweight approach. So, how do these tools get the job done? This is where things get a little scary with RVM. RVM overrides the cd shell command in order to load the current Ruby environment variables. Not only can the override cause unexpected behavior, but it also means that rubies and gemsets are loaded when switching directories. rbenv does things on the fly by using shims to execute commands. A directory of shims (~/.rbenv/shims) is inserted to the front of PATH. The directory holds a shim for every Ruby command. The operating system searches for a shim that matches the name of the command, which in turn passes it to rbenv, determining the Ruby version to execute. rbenv configuration for an app is dirt simple. Just create a .ruby-version file with Ruby version: # .ruby-version file 2.3.0 The RBENV_VERSION variable also makes it easy to quickly specify a Ruby version via the command line. It’s first in line when rbenv checks for the current Ruby version. Source: https://metova.com/choosing-a-ruby-version-management-tool-rbenv-vs-rvm/","headline":"Esto es una prueba","mainEntityOfPage":{"@type":"WebPage","@id":"https://angelamador.com/blog/test"},"url":"https://angelamador.com/blog/test"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link type="application/atom+xml" rel="alternate" href="https://angelamador.com/feed.xml" title="Ángel Amador" />
+  <link type="application/atom+xml" rel="alternate" href="https://angelamador.com/feed.xml" title="Ángel Amador" />
 
-  </head>
+</head>
+
   
-  <body class="container mx-auto w-full lg:w-1/2 p-4 font-sans text-stone-700 leadind-relaxed">
+  <body class="relative container min-h-screen px-4 py-8 mx-auto w-full lg:w-1/2 font-sans text-stone-700 leadind-relaxed">
     
-    <div class="mt-6">
+    <div class="mb-12">
       <header role="banner">
   <div>
     <p><a href="/"><b>Ángel</b></a></b> | <a href="/blog">Blog</a></p>
@@ -43,7 +44,7 @@
 
     </div>
 
-    <div class="mt-12">
+    <div class="mb-12">
       <article itemscope itemtype="http://schema.org/BlogPosting">
   <div class="text-content">
   
@@ -51,7 +52,7 @@
       <h1 itemprop="name headline">Esto es una prueba</h1>
     </header>
 
-    <p class="text-xs my-2 opacity-75">
+    <p class="text-xs -my-2 mb-10 opacity-75">
       <time datetime="2023-01-01T07:00:00+00:00" itemprop="datePublished">Jan 1, 2023
     </p></span>
 
@@ -277,14 +278,12 @@ gem 'rails', '6.0.3'
 
     </div>
 
-    <hr class="mt-20">
-
   </div>
 </article>
 
     </div>
 
-    <div class="my-12">
+    <div class="absolute bottom-5">
       <footer class="text-xs opacity-60">
   <a href="/buscar">Buscar</a> | <a href="/feed.xml" rel="nofollow" target="_blank">Seguir vía RSS</a>
 </footer>

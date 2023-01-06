@@ -1,22 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://angelamador.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://angelamador.com/" rel="alternate" type="text/html" /><updated>2023-01-04T22:30:29+00:00</updated><id>https://angelamador.com/feed.xml</id><title type="html">Ángel Amador</title><entry><title type="html">Markdown Cheatsheet for styling</title><link href="https://angelamador.com/blog/markdown-cheatsheet" rel="alternate" type="text/html" title="Markdown Cheatsheet for styling" /><published>2023-01-03T07:00:00+00:00</published><updated>2023-01-03T07:00:00+00:00</updated><id>https://angelamador.com/blog/markdown-cheatsheet</id><content type="html" xml:base="https://angelamador.com/blog/markdown-cheatsheet"><![CDATA[<p>Tras varios meses dándole vueltas, <strong>he decidido comenzar a escribir de nuevo</strong>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://angelamador.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://angelamador.com/" rel="alternate" type="text/html" /><updated>2023-01-06T22:24:57+00:00</updated><id>https://angelamador.com/feed.xml</id><title type="html">Ángel Amador</title><entry><title type="html">Markdown Cheatsheet for styling</title><link href="https://angelamador.com/blog/markdown-cheatsheet" rel="alternate" type="text/html" title="Markdown Cheatsheet for styling" /><published>2023-01-03T07:00:00+00:00</published><updated>2023-01-03T07:00:00+00:00</updated><id>https://angelamador.com/blog/markdown-cheatsheet</id><content type="html" xml:base="https://angelamador.com/blog/markdown-cheatsheet"><![CDATA[<p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
 
-<p>Sin grandes florituras y adornos. Quiero centrarme en el contenido y experimentar con los formatos.</p>
-
-<p>Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el momento me conformaré con <strong>desarrollar el hábito de escribir</strong> y acostumbrarme a anotar y conectar nuevas ideas y pensamientos.</p>
-
-<p>Nos vemos.</p>
-
-<hr />
-
-<p>Contenidos recomendados:</p>
-<ul>
-  <li><a href="https://julian.digital/">El blog de Julian.digital</a></li>
-  <li><a href="https://www.navalmanack.com/">The Almanack of Naval Ravikant: A Guide to Wealth and Happiness</a></li>
-</ul>
-
-<hr />
-
-<h1 id="título-1">Título 1</h1>
 <p>Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown.</p>
 
 <h2 id="título-2">Título 2</h2>
@@ -32,7 +15,21 @@
 
 <h3 id="encabezado-de-tercer-nivel">Encabezado de tercer nivel</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="">Ut enim ad minim veniam</a>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <strong>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+
+<blockquote>
+  <p>Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita.</p>
+</blockquote>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <em>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore”</em> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find_by</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">find_by!</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+<span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">id: </span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">],</span> <span class="ss">category: </span><span class="n">params</span><span class="p">[</span><span class="ss">:category</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <del>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore”* eu fugiat nulla pariatur</del>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <hr />
 
@@ -55,7 +52,9 @@
 
 <hr />
 
-<h3 id="listas">Listas</h3>
+<h3 id="listas-desordenadas">Listas desordenadas</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <ul>
   <li>elemento 1
@@ -67,6 +66,28 @@
   <li>elemento 2</li>
   <li>elemento 3</li>
 </ul>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<hr />
+
+<h3 id="listas-ordenadas">Listas ordenadas</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<ol>
+  <li>Elemento 1</li>
+  <li>Elemento 2
+    <ul>
+      <li>Elemento 2.1</li>
+      <li>Elemento 2.2</li>
+    </ul>
+  </li>
+  <li>Elemento 3</li>
+  <li>Elemento 4</li>
+</ol>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <hr />
 
@@ -111,7 +132,7 @@
 
 <h3 id="enlaces-externos">Enlaces externos</h3>
 
-<p><a href="https://obsidian.md/">Este enlace lleva a la web de Obsidian.md</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Tras varios meses dándole vueltas, he decidido comenzar a escribir de nuevo. Sin grandes florituras y adornos. Quiero centrarme en el contenido y experimentar con los formatos. Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el momento me conformaré con desarrollar el hábito de escribir y acostumbrarme a anotar y conectar nuevas ideas y pensamientos. Nos vemos. Contenidos recomendados: El blog de Julian.digital The Almanack of Naval Ravikant: A Guide to Wealth and Happiness Título 1 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Título 2 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Título 3 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Título 4 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Encabezado de tercer nivel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Modificando la fuente Texto en cursiva (Cmd + i) Texto en negrita (Cmd + b) Texto en negrita y cursiva (Cmd + b -&gt; Cmd + i) Este texto está tachado (Option + ñ) Citas Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Listas elemento 1 elemento 1.1 elemento 1.2 elemento 2 elemento 3 Código &lt;p&gt;Esto es un código&lt;/p&gt; @product = Product.find(params[:id]) @product = Product.find_by(id: params[:id]) @product = Product.find_by!(id: params[:id]) @product = Product.where(id: params[:id], category: params[:category]) Tablas Nombre Apellidos Teléfono Ángel Amador 678547364 José Barranco 876143524 Enlaces externos Este enlace lleva a la web de Obsidian.md]]></summary></entry><entry><title type="html">Esto es una prueba</title><link href="https://angelamador.com/blog/test" rel="alternate" type="text/html" title="Esto es una prueba" /><published>2023-01-01T07:00:00+00:00</published><updated>2023-01-01T07:00:00+00:00</updated><id>https://angelamador.com/blog/test</id><content type="html" xml:base="https://angelamador.com/blog/test"><![CDATA[<ul>
+<p><a href="https://obsidian.md/">Este enlace lleva a la web de Obsidian.md</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Título 2 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Título 3 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Título 4 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Encabezado de tercer nivel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore” eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. @product = Product.find(params[:id]) @product = Product.find_by(id: params[:id]) @product = Product.find_by!(id: params[:id]) @product = Product.where(id: params[:id], category: params[:category]) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore”* eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Modificando la fuente Texto en cursiva (Cmd + i) Texto en negrita (Cmd + b) Texto en negrita y cursiva (Cmd + b -&gt; Cmd + i) Este texto está tachado (Option + ñ) Citas Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Listas desordenadas Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. elemento 1 elemento 1.1 elemento 1.2 elemento 2 elemento 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Listas ordenadas Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elemento 1 Elemento 2 Elemento 2.1 Elemento 2.2 Elemento 3 Elemento 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Código &lt;p&gt;Esto es un código&lt;/p&gt; @product = Product.find(params[:id]) @product = Product.find_by(id: params[:id]) @product = Product.find_by!(id: params[:id]) @product = Product.where(id: params[:id], category: params[:category]) Tablas Nombre Apellidos Teléfono Ángel Amador 678547364 José Barranco 876143524 Enlaces externos Este enlace lleva a la web de Obsidian.md]]></summary></entry><entry><title type="html">Esto es una prueba</title><link href="https://angelamador.com/blog/test" rel="alternate" type="text/html" title="Esto es una prueba" /><published>2023-01-01T07:00:00+00:00</published><updated>2023-01-01T07:00:00+00:00</updated><id>https://angelamador.com/blog/test</id><content type="html" xml:base="https://angelamador.com/blog/test"><![CDATA[<ul>
   <li>MacOs includes Ruby with OS.</li>
   <li>You can check the version with: ` ruby -v `</li>
   <li>If ` which -a ruby ` shows ` # =&gt; /usr/bin/ruby `, this is the included one.</li>
