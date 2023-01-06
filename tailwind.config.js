@@ -11,8 +11,13 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    theme: {
-      extend: {},
+    extend: {
+      colors: {
+        'avatar-green': '#9DD8C6',
+        'amber-200-hover': '#efda86',
+      },
+      fontFamily: {
+      },
     },
   },
   plugins: []
