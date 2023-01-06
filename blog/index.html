@@ -2,26 +2,37 @@
 layout: default
 title: Blog
 ---
+{% if site.posts.size > 0 %}
+  <ul>
+    {% for post in paginator.posts %}
+      <div class="mb-20">
+        <li>
+        
+          <!-- Title + Link-->
+          <h2 class="text-3xl my-2 mb-4 font-black">
+            <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+            </a>
+          </h2>
 
-<div class="text-content">
-  {% if site.posts.size > 0 %}
-    <ul>
-      {% for post in paginator.posts %}
-      <li class="list-outside list-disc">
-        <!-- Title + Link-->
-        <a href="{{ post.url | relative_url }}" class="bg-white">
-        {{ post.title | escape }}
-        </a>
-        <!-- Publication date -->
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="text-xs pl-2 opacity-75">{{ post.date | date: date_format }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    No hay nada todavía.
-  {% endif %}
-</div>
+          <!-- Publication date -->
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <p class="text-xs -my-2 mb-10 opacity-75">{{ post.date | date: date_format }}</p>
+          
+          <!-- Post content -->
+          <div class="mt-6 text-content">
+            {% if site.show_excerpts %}
+              {{ post.excerpt }}
+            {% endif %}
+          </div>    
+          
+          <hr class="mt-16 w-full opacity-100">
+
+        </li>
+      </div>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 <div class="mt-12">
 {% include pagination.html %}
