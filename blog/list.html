@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: indice
+title: Índice
+---
+
+<div class="text-content">
+  {% if site.posts.size > 0 %}
+    <ul>
+      {% for post in site.posts %}
+      <li class="list-outside list-disc">
+          <!-- Title + Link-->
+          <a href="{{ post.url | relative_url }}" class="bg-white">
+          {{ post.title | escape }}
+          </a>
+          <!-- Publication date -->
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="text-xs pl-2 opacity-75">{{ post.date | date: date_format }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    No hay nada todavía.
+  {% endif %}
+</div>
+
+<div class="mt-12">
+{% include pagination.html %}
+</div>
