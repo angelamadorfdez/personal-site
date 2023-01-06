@@ -5,24 +5,8 @@ date:   2023-01-03 09:00:00 +0200
 excerpt_separator: <!--end_excerpt-->
 ---
 
+Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. 
 
-Tras varios meses dándole vueltas, **he decidido comenzar a escribir de nuevo**.
-
-Sin grandes florituras y adornos. Quiero centrarme en el contenido y experimentar con los formatos.
-
-Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el momento me conformaré con **desarrollar el hábito de escribir** y acostumbrarme a anotar y conectar nuevas ideas y pensamientos.
-
-Nos vemos.
-
----
-
-Contenidos recomendados:
-  * [El blog de Julian.digital](https://julian.digital/)
-  * [The Almanack of Naval Ravikant: A Guide to Wealth and Happiness](https://www.navalmanack.com/)
-
----
-
-# Título 1
 Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en markdown. 
 
 ## Título 2
@@ -38,7 +22,20 @@ Esto es un texto normal escrito en markdown. Esto es un texto normal escrito en 
 
 ### Encabezado de tercer nivel
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [Ut enim ad minim veniam](), quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat **cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**
+
+> Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. Esto es una cita. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. *"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"* eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+```rb
+@product = Product.find(params[:id])
+@product = Product.find_by(id: params[:id])
+@product = Product.find_by!(id: params[:id])
+@product = Product.where(id: params[:id], category: params[:category])
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ~~Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"* eu fugiat nulla pariatur~~. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ---
 
@@ -57,13 +54,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ---
 
-### Listas
+### Listas desordenadas
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 - elemento 1
 	- elemento 1.1
 	- elemento 1.2
 - elemento 2
 - elemento 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+---
+
+### Listas ordenadas
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+1. Elemento 1
+2. Elemento 2
+  - Elemento 2.1
+  - Elemento 2.2 
+3. Elemento 3
+4. Elemento 4
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 ---
 

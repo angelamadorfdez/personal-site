@@ -7,76 +7,115 @@
 
 /* General Styles */
 
+h1 {
+  @apply text-4xl my-2 mb-4;
+}
+
+h2 {
+  @apply text-3xl mt-10 mb-4;
+}
+
+h3 {
+  @apply text-2xl mt-10 mb-4;
+}
+
+h4{
+  @apply text-xl mt-10 mb-4;
+}
+
 p {
   @apply mb-6;
 }
 
-hr {
-  @apply my-12
-}
+/* Quote block */
 
 blockquote {
-  @apply mb-0 bg-green-200 p-2 rounded-md;
+  @apply my-8 bg-slate-100 p-4 rounded-md;
 }
 
 blockquote p {
+  @apply mb-0 text-sm;
+}
+
+/* Separator */
+
+hr {
+  @apply my-10 w-1/3 opacity-50;
+}
+
+/* Code Block */
+div.text-content pre {
+  @apply w-full bg-slate-800 rounded-md p-4 mb-6 text-xs text-white font-mono overflow-x-auto;
+}
+
+/*  Lists */
+
+div.text-content ul {
+  @apply ml-6 pl-2 mb-6;
+}
+
+div.text-content ul li {
+  @apply my-2 list-outside list-disc;
+}
+
+div.text-content ol {
+  @apply ml-6 pl-2 mb-6;
+}
+div.text-content ol li {
+  @apply my-2 list-outside list-decimal;
+}
+
+div.text-content ul ul {
+  @apply my-2;
+}
+
+div.text-content ol ol {
+  @apply my-2;
+}
+
+div.text-content ul ol {
+  @apply my-2;
+}
+
+div.text-content ol ul {
+  @apply my-2;
+}
+
+div.text-content blockquote ul {
   @apply mb-0;
 }
 
-/* Text content */
-
-div.text-content h1 {
-  @apply text-4xl my-2;
+div.text-content blockquote ul {
+  @apply mb-0;
 }
 
-div.text-content h2 {
-  @apply text-3xl my-2;
-}
-
-div.text-content h3 {
-  @apply text-2xl my-2;
-}
-
-div.text-content h4{
-  @apply text-xl my-2;
-}
-
-div.text-content pre {
-  @apply bg-slate-800 w-full rounded-md text-white p-4 mb-6 font-mono;
-}
-
-div.text-content ul {
-  @apply mb-6 ml-6;
-}
-
-div.text-content li ul {
-  @apply my-2 pl-6;
-}
-
-div.text-content li {
-  @apply list-outside list-disc pl-1 pb-2;
-}
+/* Enlaces */
 
 div.text-content a {
-  @apply bg-yellow-200 px-1 rounded-md;
+  @apply bg-yellow-200 px-1 rounded-sm;
 }
+
+/*  Images */
 
 div.text-content img {
   @apply rounded-lg;
 }
 
+/* Tables */
+
 div.text-content tr th {
-  @apply p-4 text-center border-2;
+  @apply px-4 py-2 text-center border-2 text-sm;
 }
 
 div.text-content tr td {
-  @apply p-4 text-center border-2;
+  @apply px-4 py-2 text-center border-2 text-sm;;
 }
+
 
 /* Search box tweaks */
 
 input#search-input {
-  @apply border-2 p-2 mb-4;
+  @apply w-full border-2 p-2 mb-4 ;
 }
 
 ul#results-container li {
@@ -90,16 +129,4 @@ ul#results-container li {
   border-radius: 50%;
   width: 30%;
   max-width: 110px;
-}
-
-/* Code formatting */
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto;
-  font-size: 0.75em;
-}
-
-code {
-  flex-wrap: wrap;
 }

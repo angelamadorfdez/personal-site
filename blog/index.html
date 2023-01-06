@@ -3,62 +3,26 @@ layout: default
 title: Blog
 ---
 
-{% if site.posts.size > 0 %}
-  <ul>
-    {% for post in paginator.posts %}
-      <div class="mb-20 post">
-        <li>
-          
-          <!-- Title + Link-->
-          <h2 class="text-4xl">
-            <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-            </a>
-          </h2>
-
-          <!-- Publication date -->
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <p class="text-xs my-2 opacity-75">{{ post.date | date: date_format }}</p>
-          
-          <!-- Post content -->
-          <div class="mt-6 text-content">
-            {% if site.show_excerpts %}
-              {{ post.excerpt }}
-            {% endif %}
-          </div>    
-          
-          <hr class="mt-20">
-
-        </li>
-      </div>
-    {% endfor %}
-  </ul>
-{% endif %}
-
-
-<!-- Pagination -->
-{% if paginator.total_pages > 1 %}
-<div>
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="mx-2">&laquo; Anterior</a>
+<div class="text-content">
+  {% if site.posts.size > 0 %}
+    <ul>
+      {% for post in paginator.posts %}
+      <li class="list-outside list-disc">
+        <!-- Title + Link-->
+        <a href="{{ post.url | relative_url }}" class="bg-white">
+        {{ post.title | escape }}
+        </a>
+        <!-- Publication date -->
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="text-xs pl-2 opacity-75">{{ post.date | date: date_format }}</span>
+      </li>
+      {% endfor %}
+    </ul>
   {% else %}
-    <span class="mx-2 opacity-25">&laquo; Anterior</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="bg-slate-100 mx-2 p-2 rounded-sm">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a href="/blog">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="mx-2">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="mx-2">Siguiente &raquo;</a>
-  {% else %}
-    <span class="mx-2 opacity-25">Siguiente &raquo;</span>
+    No hay nada todavía.
   {% endif %}
 </div>
-{% endif %}
+
+<div class="mt-12">
+{% include pagination.html %}
+</div>
