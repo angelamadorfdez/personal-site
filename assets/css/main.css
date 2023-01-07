@@ -34,7 +34,7 @@ blockquote {
 }
 
 blockquote p {
-  @apply mb-0 text-sm;
+  @apply mb-0;
 }
 
 /* Separator */

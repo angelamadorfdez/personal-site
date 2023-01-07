@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gráfico de Obsidian"
+title:  Conexiones en Obsidian
 date:   2021-04-11 09:00:00 +0200
 excerpt_separator: <!--end_excerpt-->
 ---
