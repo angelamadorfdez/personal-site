@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   
   <!-- Add favicon -->
-  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+  <link rel="shortcut icon" type="image/jpg" href="{{ '/favicon.jpg' | prepend: site.baseurl }}" >
   
   {% seo %}
   {% feed_meta %}
