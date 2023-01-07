@@ -1,6 +1,5 @@
 locale: es_ES
 title: "Ángel Amador" # the name of your site, e.g. ACME Corp.
-description: "Página personal de Ángel Amador"
 
 url: "https://angelamador.com" # the base hostname, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
