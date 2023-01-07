@@ -11,6 +11,8 @@ Sin grandes florituras y adornos. Quiero centrarme en el contenido y experimenta
 
 Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el momento me conformaré con **desarrollar el hábito de escribir** y acostumbrarme a anotar y conectar nuevas ideas y pensamientos.
 
+Nos vemos.
+
 > Contenidos recomendados:
   * [El blog de Julian.digital](https://julian.digital/)
   * [The Almanack of Naval Ravikant: A Guide to Wealth and Happiness](https://www.navalmanack.com/)
