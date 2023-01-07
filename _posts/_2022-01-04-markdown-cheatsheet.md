@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Markdown Cheatsheet for styling"
+title:  Markdown Cheatsheet for styling
 date:   2023-01-03 09:00:00 +0200
 excerpt_separator: <!--end_excerpt-->
 ---
