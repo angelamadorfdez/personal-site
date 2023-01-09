@@ -27,7 +27,9 @@ title: Blog
             {% endif %}
           </div>    
           
-          <hr class="mt-12 mb-20 w-1/2 mx-auto">
+          {% if forloop.last == false %}
+            <hr class="my-12 w-1/2 mx-auto">
+          {% endif %}
 
         </li>
       </div>
