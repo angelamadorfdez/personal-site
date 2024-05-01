@@ -1,4 +1,4 @@
 <header role="banner">
-    <a href="/" class="hover:underline"><b>Ángel</b></a></b> | 
-    <a href="/blog" class="hover:underline">Blog</a>
+    <a href="/" class="{% if page.url == '/' %}font-bold underline{% else %}hover:underline{% endif %}">Ángel</a> | 
+    <a href="/blog" class="{% if page.url == '/blog/' or page.url contains '/blog/' %}font-bold underline{% else %}hover:underline{% endif %}">Blog</a>
 </header>

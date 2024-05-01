@@ -4,9 +4,13 @@ permalink: buscar
 title: Buscar
 ---
 
+<h1 class="mb-8">Buscar</h1>
+
 <div id="search-container">
-  <input type="text" id="search-input" placeholder="Buscar...">
-  <ul id="results-container"></ul>
+  <input type="text" id="search-input" placeholder="Introducir término de búsqueda...">
+  <div class="text-content my-4">
+    <ul id="results-container"></ul>
+  </div>
 </div>
 
 <!-- Script pointing to search-script.js -->
@@ -18,7 +22,8 @@ title: Buscar
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: 'search/search.json',
-    noResultsText: ("No se ha encontrado nada."),
+    searchResultTemplate: '<li><a href="{url}">{title}</a> <span class="text-xs -my-2 mb-10 opacity-75">{date}</span></li>',
+    noResultsText: ('<span class="opacity-75">No se ha encontrado nada.</span>'),
   })
 </script>
 
