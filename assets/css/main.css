@@ -92,7 +92,7 @@ div.text-content blockquote ul {
 /* Enlaces */
 
 div.text-content a {
-  @apply bg-amber-200 hover:bg-amber-200-hover px-1 rounded-md;
+  @apply bg-[#F2E39B] hover:bg-amber-200-hover px-1 rounded-sm;
 }
 
 /*  Images */
