@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Markdown Cheatsheet for styling
-date:   2023-01-03 09:00:00 +0200
+date:   2024-05-01 09:00:00 +0200
 excerpt_separator: <!--end_excerpt-->
 ---
 
@@ -102,8 +102,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 | Nombre | Apellidos | Teléfono |
 | --- | --- | --- |
-| Ángel | Amador | 678547364 |
-| José | Barranco | 876143524 |
+| Ángel | Amador | 678***364 |
+| José | Barrero | 876***524 |
 
 ---
 
