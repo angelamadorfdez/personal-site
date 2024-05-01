@@ -9,7 +9,7 @@ Tras varios meses dándole vueltas **he decidido comenzar a escribir de nuevo**.
 
 Todavía no tengo muy claro sobre qué, cómo o cada cuánto publicaré. Por el momento me conformaré con **desarrollar el hábito de escribir** y acostumbrarme a anotar y conectar nuevas ideas y pensamientos.
 
-¡Nos vemos!
+Nos vemos.
 
 > Contenidos recomendados:
   * [El blog de Julian.digital](https://julian.digital/)
