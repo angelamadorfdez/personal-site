@@ -4,7 +4,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 class Watcher:
-    DIRECTORY_TO_WATCH = "/"  # Asegúrate de cambiar esto por la ruta correcta de tu directorio
+    DIRECTORY_TO_WATCH = "/"
 
     def __init__(self):
         self.observer = Observer()
@@ -19,7 +19,9 @@ class Watcher:
         except:
             self.observer.stop()
             print("Observer Stopped")
-            self.observer.join()
+
+        self.observer.join()
+
 
 class Handler(FileSystemEventHandler):
 
@@ -29,16 +31,11 @@ class Handler(FileSystemEventHandler):
             return None
 
         elif event.event_type == 'modified' or event.event_type == 'created':
-            print(f"Evento detectado: {event.event_type} en {event.src_path}")
+            print(f"Detected changes in: {event.src_path}. Auto committing and pushing...")
             os.system('git add .')
-            print("Intentando commitear cambios.")
-            # Ejecutamos git commit y verificamos si fue exitoso
-            commit_status = os.system('git commit -m "Auto-commit"')
-            if commit_status == 0:
-                print("Commit exitoso, realizando push a repositorio remoto.")
-                os.system('git push')
-            else:
-                print("No se realizó commit, probablemente porque no hay cambios que commitear.")
+            os.system('git commit -m "Auto-commit"')
+            os.system('git push')
+
 
 if __name__ == '__main__':
     w = Watcher()
