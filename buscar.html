@@ -35,14 +35,17 @@
     
     <div class="mb-12">
       <header role="banner">
-    <a href="/" class="hover:underline"><b>Ángel</b></a></b> | <a href="/blog" class="hover:underline">Blog</a>
+    <a href="/" class="hover:underline"><b>Ángel</b></a></b>
+    
+        | <a href="/blog" class="hover:underline">Blog</a>
+     
 </header>
 
     </div>
 
     <div class="mb-12">
       <div id="search-container">
-  <input type="text" id="search-input" placeholder="Buscar por palabra clave">
+  <input type="text" id="search-input" placeholder="Buscar...">
   <ul id="results-container"></ul>
 </div>
 
@@ -55,7 +58,7 @@
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: 'search/search.json',
-    noResultsText: ("No se ha encontrado nada"),
+    noResultsText: ("No se ha encontrado nada."),
   })
 </script>
 
