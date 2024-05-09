@@ -5,7 +5,7 @@ date:   2024-05-09 09:00:00 +0200
 excerpt_separator: <!--end_excerpt-->
 ---
 
-<img src="attachments/bylokki%20wallpaper.jpg)">
+![](attachments/bylokki%20wallpaper.jpg)
 
 Estamos acostumbrados a que en internet todo sea gratis. Consumimos vídeos en Youtube, leemos artículos online, escuchamos podcast en nuestro teléfonos, etc.
 
