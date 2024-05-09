@@ -98,7 +98,7 @@ div.text-content a {
 /*  Images */
 
 div.text-content img {
-  @apply rounded-lg;
+  @apply rounded-lg mb-12;
 }
 
 /* Tables */
